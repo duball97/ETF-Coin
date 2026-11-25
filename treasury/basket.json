@@ -1,0 +1,8 @@
+[
+  {
+    "symbol": "USDC",
+    "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+    "bps": 10000,
+    "note": "Dollar exposure — edit mint/bps and add gold/silver SPL mints when ready"
+  }
+]

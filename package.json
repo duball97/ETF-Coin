@@ -1,0 +1,16 @@
+{
+  "name": "etf-coin",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Bloomberg-style $ETF site and Solana treasury airdropper",
+  "scripts": {
+    "dev": "npm run dev --prefix web",
+    "build": "npm run build --prefix web",
+    "preview": "npm run preview --prefix web",
+    "treasury": "npm run cli --prefix treasury --",
+    "treasury:claim": "npm run claim --prefix treasury",
+    "treasury:buy": "npm run buy --prefix treasury",
+    "treasury:airdrop": "npm run airdrop --prefix treasury",
+    "treasury:run": "npm run run:cycle --prefix treasury"
+  }
+}

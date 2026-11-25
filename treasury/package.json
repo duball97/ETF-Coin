@@ -1,0 +1,32 @@
+{
+  "name": "etf-treasury",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Claim pump.fun fees, buy basket assets, airdrop to $ETF holders",
+  "bin": {
+    "etf-treasury": "./src/cli.ts"
+  },
+  "scripts": {
+    "cli": "tsx src/cli.ts",
+    "claim": "tsx src/cli.ts claim",
+    "buy": "tsx src/cli.ts buy",
+    "airdrop": "tsx src/cli.ts airdrop",
+    "run:cycle": "tsx src/cli.ts run",
+    "status": "tsx src/cli.ts status",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@pump-fun/pump-sdk": "1.32.0",
+    "@solana/spl-token": "^0.4.13",
+    "@solana/web3.js": "^1.98.4",
+    "bs58": "^6.0.0",
+    "commander": "^15.1.0",
+    "dotenv": "^18.0.10"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.10",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
