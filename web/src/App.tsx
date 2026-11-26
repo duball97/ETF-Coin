@@ -5,6 +5,7 @@ const CA = "TBA";
 const BUY_URL = "#buy";
 const X_URL = "https://x.com/";
 const TELEGRAM_URL = "https://t.me/";
+const asset = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\//, "")}`;
 
 const TICKER = [
   { label: "USD", value: "+0.42%", up: true },
@@ -41,21 +42,21 @@ const ASSETS = [
     name: "Dollar stack",
     weight: "Live",
     thesis: "Cash that holds when risk sells off.",
-    image: "/dollar-desk.jpg",
+    image: asset("dollar-desk.jpg"),
   },
   {
     symbol: "XAU",
     name: "Tokenized gold",
     weight: "Soon",
     thesis: "Hard asset bid in risk-off regimes.",
-    image: "/vault-gold.jpg",
+    image: asset("vault-gold.jpg"),
   },
   {
     symbol: "XAG",
     name: "Tokenized silver",
     weight: "Soon",
     thesis: "Industrial metal with monetary heat.",
-    image: "/silver-stack.jpg",
+    image: asset("silver-stack.jpg"),
   },
 ];
 
@@ -187,7 +188,7 @@ export default function App() {
       <main id="top">
         <section className="hero" ref={heroRef}>
           <motion.div className="hero-media" style={{ y: heroY, opacity: heroOpacity }}>
-            <img src="/vault-gold.jpg" alt="" />
+            <img src={asset("vault-gold.jpg")} alt="" />
             <div className="hero-media-shade" />
           </motion.div>
           <div className="hero-grid" />
@@ -262,7 +263,7 @@ export default function App() {
               viewport={{ once: true, amount: 0.35 }}
               transition={{ duration: 0.7 }}
             >
-              <img src="/dollar-desk.jpg" alt="Dollar desk under amber light" />
+              <img src={asset("dollar-desk.jpg")} alt="Dollar desk under amber light" />
               <figcaption>USD exposure · first sleeve of the treasury</figcaption>
             </motion.figure>
           </div>
@@ -348,7 +349,7 @@ export default function App() {
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.7 }}
             >
-              <img src="/silver-stack.jpg" alt="Silver stack" />
+              <img src={asset("silver-stack.jpg")} alt="Silver stack" />
               <figcaption>Holders receive the bought sleeve — not vibes</figcaption>
             </motion.figure>
             <div className="split-copy">
@@ -398,7 +399,7 @@ export default function App() {
 
         <section className="band band-cta" id="links">
           <div className="cta-stage">
-            <img src="/vault-gold.jpg" alt="" />
+            <img src={asset("vault-gold.jpg")} alt="" />
             <div className="cta-stage-shade" />
             <div className="shell cta-stage-copy">
               <p className="section-label">Terminal</p>
