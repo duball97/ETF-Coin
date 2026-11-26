@@ -242,7 +242,7 @@ export default function App() {
           </div>
         </section>
 
-        <section className="band band-ink" id="thesis">
+        <section className="band" id="thesis">
           <div className="shell split">
             <div className="split-copy">
               <p className="section-label">Thesis</p>
@@ -269,7 +269,7 @@ export default function App() {
           </div>
         </section>
 
-        <section className="band band-slate">
+        <section className="band">
           <div className="shell">
             <p className="section-label">Divergence</p>
             <h2 className="section-title">Same market. Opposite tape.</h2>
@@ -280,7 +280,7 @@ export default function App() {
           </div>
         </section>
 
-        <section className="band band-flow" id="mechanism">
+        <section className="band" id="mechanism">
           <div className="shell">
             <p className="section-label">Mechanism</p>
             <h2 className="section-title">Fees in. Safe-haven out.</h2>
@@ -340,7 +340,7 @@ export default function App() {
           </div>
         </section>
 
-        <section className="band band-ink" id="airdrop">
+        <section className="band" id="airdrop">
           <div className="shell split split-reverse">
             <motion.figure
               className="split-media tall"
