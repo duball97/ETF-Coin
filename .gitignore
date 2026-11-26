@@ -1,0 +1,12 @@
+node_modules/
+dist/
+build/
+.env
+.env.local
+.DS_Store
+*.log
+web/dist/
+treasury/dist/
+treasury/receipts/*.json
+!treasury/receipts/.gitkeep
+.vite/
